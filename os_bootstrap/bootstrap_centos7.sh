@@ -35,7 +35,7 @@ yum remove -y NetworkManager NetworkManager-libnm
 chkconfig network on
 
 # install packages
-yum install -y kernel-ml htop yum-cron bash-completion mlocate net-tools tmux wget yum-plugin-versionlock yum-plugin-rpm-warm-cache deltarpm mdadm
+yum install -y kernel-ml htop yum-cron bash-completion mlocate net-tools tmux wget yum-plugin-versionlock yum-plugin-rpm-warm-cache deltarpm mdadm yum-plugin-rpm-warm-cache
 
 # reconfigure grub for kernel-ml, unsure why centos doesn't do this for you
 grub2-mkconfig -o /boot/grub2/grub.cfg
